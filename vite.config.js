@@ -4,6 +4,8 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import vue from "@vitejs/plugin-vue";
 import WindiCSS from 'vite-plugin-windicss'
+// import @导入
+import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
@@ -30,4 +32,9 @@ export default defineConfig(async () => ({
   // 3. to make use of `TAURI_DEBUG` and other env variables
   // https://tauri.studio/v1/api/config#buildconfig.beforedevcommand
   envPrefix: ["VITE_", "TAURI_"],
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src'),
+    },
+  }
 }));

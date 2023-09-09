@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["src/*"],
+            "@css*": ["src/assets/css*"],
+            "@icon*": ["src/assets/icon/*"],
+            "@image*": ["src/assets/image/*"]
+
+        }
+    },
+    "exclude": [
+        "node_modules","images","src-tauri"
+    ]
+}
