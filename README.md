@@ -4,6 +4,7 @@ pnpm create tauri-app
 pnpm install
 pnpm install vue-router@4
 pnpm install pinia
+pnpm i -D @types/node
 pnpm tauri dev
 ```
 
