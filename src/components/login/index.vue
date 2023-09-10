@@ -1,12 +1,10 @@
 <script setup>
-
 </script>
-
 <template>
-  <div>
-    <router-view></router-view>
-  </div>
+    <div class="bg-opacity-100">
+        
+    </div>
 </template>
-
 <style scoped>
+
 </style>
