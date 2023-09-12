@@ -1,7 +1,13 @@
-<script setup></script>
+<script setup>
+  function closeWindow() {
+    console.log("vue close");
+  }
+</script>
 <template>
+    <div class="">
+      <!-- <div class="m-auto h-8 w-10 bg-black" @click="closeWindow"></div> -->
+    </div>
     <div>
-        
       <div class="bg-red-400 h-20 text-center overflow-hidden text-base leading-20 w-96 mx-auto">
         hello word
         hello word
