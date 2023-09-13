@@ -16,5 +16,7 @@ pnpm install -D unplugin-vue-components unplugin-auto-import
 ![图 0](images/62ca42abe89c3d95836e1e996d8f887cf4ee8641abc2e1e236d5b4242be64762.png)  
 ### Windi CSS
 pnpm i -D vite-plugin-windicss windicss
+### icon 插件
+pnpm i -D unplugin-icons
 
 

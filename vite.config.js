@@ -3,9 +3,11 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import vue from "@vitejs/plugin-vue";
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
 import WindiCSS from 'vite-plugin-windicss'
 // import @导入
-import { resolve } from 'path';
+import { resolve  } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
@@ -16,8 +18,9 @@ export default defineConfig(async () => ({
       resolvers: [ElementPlusResolver()],
     }),
     Components({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [ElementPlusResolver(), IconsResolver()],
     }),
+    Icons({compiler: 'vue3', autoInstall: true})
   ],
 
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`

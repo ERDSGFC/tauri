@@ -12,9 +12,7 @@ onMounted(() => {
 
 <template>
   <div id="win-root" class="relative min-h-screen">
-    <div class="bg-red-300 h-8">
-      <topToolbar/>
-    </div>
+    <topToolbar/>
     <div id="content" class="bg-red-200">
     <router-view></router-view>
     </div>
