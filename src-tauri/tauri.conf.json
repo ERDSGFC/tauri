@@ -18,12 +18,16 @@
       },
       "window": {
         "all": false,
-        "center": false,
+        "center": true,
         "close": true,
         "create": true,
-        "hide": false,
+        "hide": true,
         "maximize": true,
         "minimize": true,
+        "show": true,
+        "startDragging": true,
+        "unmaximize": true,
+        "unminimize": true,
         "print": false,
         "requestUserAttention": false,
         "setAlwaysOnTop": false,
@@ -46,11 +50,7 @@
         "setResizable": false,
         "setSize": false,
         "setSkipTaskbar": false,
-        "setTitle": false,
-        "show": false,
-        "startDragging": false,
-        "unmaximize": true,
-        "unminimize": false
+        "setTitle": false
       },
       "shell": {
         "all": false,
